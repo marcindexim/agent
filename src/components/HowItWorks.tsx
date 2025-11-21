@@ -492,8 +492,8 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/EasyPosting_%20Automate%20Content.mp4"
               autoPlay
               loop
-              muted
               playsInline
+              controls
               className="max-w-full h-auto rounded-xl shadow-2xl"
             >
               Your browser does not support the video tag.
