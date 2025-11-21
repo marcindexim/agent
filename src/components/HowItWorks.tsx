@@ -461,7 +461,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
                       disabled={isSubmitting}
                       className="w-full bg-[#2C4FDC] text-white px-6 py-3 rounded-lg hover:bg-[#2440B8] transition-all font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      {isSubmitting ? 'Starting Trial...' : 'Start Free Trial'}
+                      {isSubmitting ? 'Starting Trial...' : 'See How It Works'}
                     </button>
                   </div>
                   {submitStatus === 'error' && (
