@@ -900,7 +900,9 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
 
             {onNavigateToRegister && (
               <button
-                onClick={onNavigateToRegister}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className="w-full bg-[#2C4FDC] text-white px-8 py-4 rounded-xl hover:bg-[#2440B8] transition-all text-lg font-bold shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group"
               >
                 Start Free 10-Day Trial
