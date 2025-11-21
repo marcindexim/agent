@@ -488,11 +488,16 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
           </div>
 
           <div className="mt-12 flex justify-center">
-            <img 
-              src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/dashb1.png" 
-              alt="EasyPosting Dashboard" 
-              className="max-w-full h-auto rounded-xl"
-            />
+            <video 
+              src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/EasyPosting_%20Automate%20Content.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="max-w-full h-auto rounded-xl shadow-2xl"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
 
         </div>
