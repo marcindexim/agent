@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   Sparkles, Database, FileText, Wand2, Calendar, Send,
   Globe, MessageCircle, Twitter, Linkedin, Facebook, Instagram,
   Zap, Clock, BarChart3, Shield, Users, Briefcase, PenTool,
-  Store, Building, ChevronDown, ChevronUp, ArrowRight, CheckCircle, LogOut, Mail, Eye, UserPlus
+  Store, Building, ChevronDown, ChevronUp, ArrowRight, CheckCircle, LogOut, Mail, Eye, UserPlus, Play
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
@@ -24,6 +24,8 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
   const [onlineCount, setOnlineCount] = useState(12);
   const [recentSignup, setRecentSignup] = useState<string | null>(null);
   const [showSignup, setShowSignup] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const generateRandomEmail = () => {
     const names = ['john', 'sarah', 'mike', 'emma', 'alex', 'lisa', 'david', 'maria', 'james', 'anna', 'robert', 'kate', 'peter', 'julia', 'tom', 'olivia'];
@@ -482,17 +484,36 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
             </div>
           </div>
 
-          <div className="mt-12 flex justify-center">
-            <video 
-              src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/EasyPosting_%20Automate%20Content.mp4"
-              autoPlay
-              loop
-              playsInline
-              controls
-              className="max-w-full h-auto rounded-xl shadow-2xl"
-            >
-              Your browser does not support the video tag.
-            </video>
+          <div className="mt-12 flex justify-center relative">
+            <div className="relative inline-block">
+              <video 
+                ref={videoRef}
+                src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/EasyPosting_%20Automate%20Content.mp4"
+                loop
+                playsInline
+                controls
+                className="max-w-full h-auto rounded-xl shadow-2xl"
+                onPlay={() => setIsVideoPlaying(true)}
+                onPause={() => setIsVideoPlaying(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+              {!isVideoPlaying && (
+                <div 
+                  className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-xl cursor-pointer hover:bg-black/40 transition-colors"
+                  onClick={() => {
+                    if (videoRef.current) {
+                      videoRef.current.play();
+                      setIsVideoPlaying(true);
+                    }
+                  }}
+                >
+                  <div className="bg-white/90 rounded-full p-6 hover:bg-white transition-colors shadow-2xl">
+                    <Play className="w-16 h-16 text-[#2C4FDC] fill-[#2C4FDC]" />
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
         </div>
