@@ -277,8 +277,8 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
 
   const faqs = [
     {
-      question: 'What is Content AI?',
-      answer: 'Content AI is an intelligent platform that automates content creation and multi-platform publishing. It uses AI to generate engaging posts based on your templates and data sources, then distributes them across WordPress, Reddit, Discord, and social media platforms.',
+      question: 'What is EasyPosting?',
+      answer: 'EasyPosting is an intelligent platform that automates content creation and multi-platform publishing. It uses AI to generate engaging posts based on your templates and data sources, then distributes them across WordPress, Reddit, Discord, and social media platforms.',
     },
     {
       question: 'How does the AI content generation work?',
@@ -306,7 +306,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
     },
     {
       question: 'Do I need separate accounts for each platform?',
-      answer: 'Yes, you\'ll need to connect your existing accounts for each platform you want to publish to. Content AI integrates with your accounts securely to enable publishing on your behalf.',
+      answer: 'Yes, you\'ll need to connect your existing accounts for each platform you want to publish to. EasyPosting integrates with your accounts securely to enable publishing on your behalf.',
     },
     {
       question: 'Is my data secure?',
@@ -353,7 +353,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Sparkles className="w-8 h-8 text-[#2C4FDC]" />
-            <h1 className="text-2xl font-bold text-gray-800">Content AI</h1>
+            <h1 className="text-2xl font-bold text-gray-800">EasyPosting</h1>
           </div>
           <div className="flex items-center gap-3">
             {isAuthenticated ? (
@@ -429,7 +429,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
                     <CheckCircle className="w-7 h-7 text-green-600" />
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                    Welcome to Content AI!
+                    Welcome to EasyPosting!
                   </h4>
                   <p className="text-gray-600 mb-6 text-sm">
                     Check your email for instructions to activate your trial.
@@ -490,7 +490,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
           <div className="mt-12 flex justify-center">
             <img 
               src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/dashb1.png" 
-              alt="Content AI Dashboard" 
+              alt="EasyPosting Dashboard" 
               className="max-w-full h-auto rounded-xl"
             />
           </div>
@@ -503,7 +503,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              What is Content AI?
+              What is EasyPosting?
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               An intelligent platform that automates content creation and multi-platform publishing,
@@ -680,7 +680,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               Frequently Asked Questions
             </h3>
             <p className="text-lg text-gray-600">
-              Everything you need to know about Content AI
+              Everything you need to know about EasyPosting
             </p>
           </div>
 
@@ -742,7 +742,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
                 <Users className="w-10 h-10 text-yellow-600" />
               </div>
               <p className="text-gray-800 mb-3 font-medium">
-                "Content AI transformed my workflow. I can focus on creating, not posting!"
+                "EasyPosting transformed my workflow. I can focus on creating, not posting!"
               </p>
               <p className="text-sm text-gray-600 font-semibold">- Mike T.</p>
             </div>
@@ -786,7 +786,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
                 <Users className="w-10 h-10 text-teal-600" />
               </div>
               <p className="text-gray-800 mb-3 font-medium">
-                "Simple, powerful, effective. Content AI is everything I needed and more!"
+                "Simple, powerful, effective. EasyPosting is everything I needed and more!"
               </p>
               <p className="text-sm text-gray-600 font-semibold">- David P.</p>
             </div>
@@ -830,7 +830,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               Ready to Automate Your Content?
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Stop spending hours on manual posting. Let Content AI handle the distribution while you focus on creating amazing content.
+              Stop spending hours on manual posting. Let EasyPosting handle the distribution while you focus on creating amazing content.
             </p>
           </div>
 
@@ -925,7 +925,7 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
           </div>
 
           <p className="text-center text-gray-400 mt-8 text-sm">
-            Join 1,000+ content creators already saving time with Content AI
+            Join 1,000+ content creators already saving time with EasyPosting
           </p>
         </div>
       </section>
@@ -934,10 +934,10 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="w-6 h-6 text-[#2C4FDC]" />
-            <span className="text-lg font-bold text-gray-800">Content AI</span>
+            <span className="text-lg font-bold text-gray-800">EasyPosting</span>
           </div>
           <p className="text-gray-600 text-sm">
-            &copy; {new Date().getFullYear()} Content AI. All rights reserved.
+            &copy; {new Date().getFullYear()} EasyPosting. All rights reserved.
           </p>
         </div>
       </footer>
