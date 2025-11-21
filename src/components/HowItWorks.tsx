@@ -376,14 +376,9 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
                     Sign In
                   </button>
                 )}
-                {onNavigateToRegister && (
-                  <button
-                    onClick={onNavigateToRegister}
-                    className="bg-[#2C4FDC] text-white px-6 py-2 rounded-lg hover:bg-[#2440B8] transition-colors font-medium"
-                  >
-                    Get Started Free
-                  </button>
-                )}
+                <span className="text-orange-600 font-bold px-4 py-2 rounded-lg border-2 border-orange-500 bg-orange-50">
+                  Only 200 free account
+                </span>
               </>
             )}
           </div>
