@@ -3,7 +3,7 @@ import {
   Sparkles, Database, FileText, Wand2, Calendar, Send,
   Globe, MessageCircle, Twitter, Linkedin, Facebook, Instagram,
   Zap, Clock, BarChart3, Shield, Users, Briefcase, PenTool,
-  Store, Building, ChevronDown, ChevronUp, ArrowRight, CheckCircle, LogOut, Mail, Eye
+  Store, Building, ChevronDown, ChevronUp, ArrowRight, CheckCircle, LogOut, Mail, Eye, UserPlus
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
@@ -199,6 +199,13 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
       name: 'Instagram',
       description: 'Visual content',
       color: 'bg-pink-50 text-pink-600',
+    },
+    {
+      icon: UserPlus,
+      name: 'Register',
+      description: 'Get started today',
+      color: 'bg-green-50 text-green-600',
+      isRegister: true,
     },
   ];
 
@@ -582,8 +589,18 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {platforms.map((platform) => {
               const Icon = platform.icon;
+              const handleClick = platform.isRegister 
+                ? () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                : undefined;
+              
               return (
-                <div key={platform.name} className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-all text-center">
+                <div 
+                  key={platform.name} 
+                  onClick={handleClick}
+                  className={`bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-all text-center ${platform.isRegister ? 'cursor-pointer' : ''}`}
+                >
                   <div className={`w-16 h-16 ${platform.color} rounded-xl flex items-center justify-center mx-auto mb-4`}>
                     <Icon className="w-8 h-8" />
                   </div>
