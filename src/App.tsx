@@ -8,7 +8,7 @@ import { HowItWorks } from './components/HowItWorks';
 type AuthView = 'login' | 'register' | 'how-it-works';
 
 function AppContent() {
-  const [authView, setAuthView] = useState<AuthView>('login');
+  const [authView, setAuthView] = useState<AuthView>('how-it-works');
   const { user, loading } = useAuth();
 
   if (loading) {
