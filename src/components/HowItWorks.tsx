@@ -480,6 +480,14 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
             </div>
           </div>
 
+          <div className="mt-12 flex justify-center">
+            <img 
+              src="https://tw0qfum1oukimcpx.public.blob.vercel-storage.com/dashb1.png" 
+              alt="Content AI Dashboard" 
+              className="max-w-full h-auto rounded-xl"
+            />
+          </div>
+
         </div>
       </section>
 
@@ -826,8 +834,8 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               <div className="text-sm text-gray-400 mt-2">Publish more in less time</div>
             </div>
           </div>
-
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl max-w-2xl mx-auto">
+          
+          <div className="bg-white/1 rounded-3xl p-8 md:p-12 overflow-y-auto shadow-2xl max-w-2xl mx-auto border border-gray-200">
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                 <Zap className="w-4 h-4" />
@@ -835,10 +843,10 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               </div>
               <div className="mb-4">
                 <div className="flex items-center justify-center gap-4 mb-2">
-                  <span className="text-3xl font-bold line-through text-gray-400">$29/mo</span>
-                  <span className="text-6xl font-bold text-gray-900">$0</span>
+                  <span className="text-3xl font-bold line-through text-gray-200">$29/mo</span>
+                  <span className="text-7xl font-bold text-green-600">$0</span>
                 </div>
-                <p className="text-gray-600 text-lg font-medium">Free for 10 days, then $9/month</p>
+                <p className="text-gray-100 text-lg font-medium">Free for 10 days, then $9/month</p>
               </div>
             </div>
 
@@ -846,29 +854,29 @@ export function HowItWorks({ onNavigateToLogin, onNavigateToRegister, onSignOut,
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">Full Access to All Features</p>
-                  <p className="text-sm text-gray-600">AI generation, scheduling, analytics, and more</p>
+                  <p className="font-semibold text-gray-100">Full Access to All Features</p>
+                  <p className="text-sm text-gray-300">AI generation, scheduling, analytics, and more</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">Unlimited Posts & Platforms</p>
-                  <p className="text-sm text-gray-600">No restrictions on content or distribution</p>
+                  <p className="font-semibold text-gray-100">Unlimited Posts & Platforms</p>
+                  <p className="text-sm text-gray-300">No restrictions on content or distribution</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">Priority Support</p>
-                  <p className="text-sm text-gray-600">Get help when you need it</p>
+                  <p className="font-semibold text-gray-100">Priority Support</p>
+                  <p className="text-sm text-gray-300">Get help when you need it</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">No Credit Card Required</p>
-                  <p className="text-sm text-gray-600">Start free, upgrade when ready</p>
+                  <p className="font-semibold text-gray-100">No Credit Card Required</p>
+                  <p className="text-sm text-gray-300">Start free, upgrade when ready</p>
                 </div>
               </div>
             </div>
